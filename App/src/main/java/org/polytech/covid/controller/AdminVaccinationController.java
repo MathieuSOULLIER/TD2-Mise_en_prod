@@ -39,5 +39,11 @@ public class AdminVaccinationController {
      public List<AdminVaccination> rechercherAdmins(@RequestParam("nom") String nom) {
          return adminService.rechercherAdmins(nom);
      }
+
+     @GetMapping("/public/test")
+     public String rechercherAdmins() {
+         String bravo = "bravo";
+         return bravo;
+     }
 }
 
