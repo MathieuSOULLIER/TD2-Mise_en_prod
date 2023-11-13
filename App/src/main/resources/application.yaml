@@ -1,0 +1,17 @@
+spring:
+ liquibase:
+  enabled: false
+ datasource:
+  url: jdbc:postgresql://localhost:5432/covid-db
+  username: postgres
+  password: 100421
+ jpa:
+  database-plateform: org.hibernate.dialect.PostgreSQLDialect
+  show-sql: true
+  hibernate.ddl-auto: create
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE

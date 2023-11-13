@@ -1,0 +1,25 @@
+
+###
+POST http://localhost:8080/medecins/ajouter
+Content-Type: application/json
+
+{
+    "nom": "depoivre",
+    "motDePasse": "motdepasse",
+    "idCentre": "1"
+}
+
+
+
+###
+PUT http://localhost:8080/medecins/modifier/1
+Content-Type: application/json
+
+{
+  "nom": "New Depoivre",
+  "motDePasse": "mdp",
+  "idCentre": "2"
+}
+
+###
+GET http://localhost:8080/medecins/rechercher?nom=re

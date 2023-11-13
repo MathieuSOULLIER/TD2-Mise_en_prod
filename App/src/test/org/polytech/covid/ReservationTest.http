@@ -1,0 +1,30 @@
+
+###
+GET http://localhost:8080/reservations/afficher?nom=
+
+###
+PATCH http://localhost:8080/reservations/valider/1
+
+###
+DELETE http://localhost:8080/reservations/supprimer/1
+
+
+###
+POST http://localhost:8080/reservations/ajouter
+Content-Type: application/json
+
+{
+  "centreVaccination":{
+     "idCentre": "1"
+  },
+  "nom": "John",
+  "prenom": "Doe",
+  "mail": "john.doe@example.com",
+  "telephone": "1234567890",
+  "date": "2023-09-30",
+  "heure": "14:30",
+  "validationVaccin": false
+}
+
+
+

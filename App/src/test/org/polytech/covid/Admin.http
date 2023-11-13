@@ -1,0 +1,29 @@
+
+###
+POST http://localhost:8080/admin/ajouter
+Content-Type: application/json
+
+{
+    "nom": "depoivre",
+    "motDePasse": "motdepasse",
+    "idCentre": "1"
+}
+
+
+
+###
+PUT http://localhost:8080/admin/modifier/1
+Content-Type: application/json
+
+{
+  "nom": "New Depoivre",
+  "motDePasse": "mdp",
+  "idCentre": "2"
+}
+
+###
+DELETE http://localhost:8080/admin/supprimer/1
+
+
+###
+GET http://localhost:8080/admin/rechercher?nom=re

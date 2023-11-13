@@ -1,0 +1,33 @@
+
+###
+POST http://localhost:8080/public/centres/ajouter
+Content-Type: application/json
+
+{
+    "nom": "Centre de Vaccination A",
+    "ville": "jarville",
+    "adresse": "123 Rue de la Vaccination",
+    "codePostal": "54700",
+    "heurOuverture": 7,
+    "heurFermeture": 17
+}
+
+###
+PUT http://localhost:8080/public/centres/modifier/4
+Content-Type: application/json
+
+{
+  "ville": "Nouvelle Ville",
+  "nom": "Nouveau Nom",
+  "adresse": "Nouvelle Adresse",
+  "codePostal": "57000",
+  "heurOuverture": 9,
+  "heurFermeture": 19
+}
+
+
+###
+DELETE http://localhost:8080/private/centres/supprimer/3
+
+###
+GET http://localhost:8080/public/centres/rechercher?ville=
