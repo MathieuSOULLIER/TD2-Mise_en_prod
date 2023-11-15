@@ -42,8 +42,10 @@ public class AdminVaccinationController {
 
      @GetMapping("/public/test")
      public String rechercherAdmins() {
-         String bravo = "bravo";
-         return bravo;
+         String bravotext = "Bravo test réussi ! Appli OK !";
+         return bravotext;
      }
+     
+     
 }
 
