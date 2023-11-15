@@ -1,14 +1,19 @@
-spring:
- liquibase:
+server:
+  port: 8080
+
+liquibase:
   enabled: false
- datasource:
-  url: jdbc:postgresql://localhost:5432/covid-db
+
+datasource:
+  url: jdbc:postgresql://postgres:5432/covid-docker
   username: postgres
-  password: 100421
- jpa:
-  database-plateform: org.hibernate.dialect.PostgreSQLDialect
+  password: postgres
+
+jpa:
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
   show-sql: true
-  hibernate.ddl-auto: create
+  hibernate:
+    ddl-auto: create
 
 logging:
   level:

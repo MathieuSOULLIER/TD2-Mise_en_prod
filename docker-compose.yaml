@@ -1,20 +1,25 @@
 version: '3'
 
 services:
-  postgres:
-    image: postgres:latest
-    environment:
-      POSTGRES_DB: mondb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: "100421"
 
-  spring-app:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
     depends_on:
       - postgres
     environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mondb
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/covid-docker
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: "100421"
+      SPRING_DATASOURCE_PASSWORD: postgres
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: covid-docker
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
