@@ -21,7 +21,7 @@ pipeline {
             stage('Build et Push des Docker Images') {
                 steps {
                     script {
-                        docker.build('td2-mise-en-prod')
+                        docker.build('td2-mise_en_prod-app')
                     }
                 }
             }
