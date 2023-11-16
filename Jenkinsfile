@@ -18,10 +18,21 @@ pipeline {
                 }
             }
         }
-        stage('Stage3') {
-            steps {
-                echo 'Hello World'
+            stage('Build et Push des Docker Images') {
+                steps {
+                    script {
+                        docker.build('td2-mise-en-prod')
+                    }
+                }
+            }
+
+            stage('Deploy with Docker Compose') {
+                steps {
+                    script {
+                        // Déploiement avec Docker Compose
+                        sh 'docker-compose up'
+                    }
+                }
             }
         }
-    }
 } 
