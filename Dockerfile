@@ -6,6 +6,9 @@ COPY . /workdir
 
 WORKDIR /workdir/App
 
+# Donner les permissions d'exécution au script gradlew
+RUN chmod +x ./gradlew
+
 RUN ./gradlew build
 
 CMD [ "java" ,"-jar", "/workdir/App/build/libs/demo-0.0.1-SNAPSHOT.jar" ]
