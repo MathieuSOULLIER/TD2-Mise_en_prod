@@ -20,18 +20,13 @@ pipeline {
         }
             stage('Build et Push des Docker Images') {
                 steps {
-                    script {
-                        docker.build('td2-mise_en_prod-app')
-                    }
+                    sh 'docker build -t td2_mise_en_prod .'
                 }
             }
 
             stage('Deploy with Docker Compose') {
                 steps {
-                    script {
-                        // Déploiement avec Docker Compose
-                        sh 'docker-compose up'
-                    }
+                    sh 'docker compose up -d'
                 }
             }
         }
