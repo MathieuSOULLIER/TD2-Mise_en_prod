@@ -32,3 +32,9 @@ verifier que vous etes bien à la racine du dossier intitulé "TD2-MISE_EN_PROD"
 
 #### - Lancé le build
 Entrer la commande ```docker build -t td2_mise_en_prod .```
+
+### 3. Démarrer l'application en local
+
+#### - Démarrer l'application 
+Entrer la commande ```docker compose up```
+
