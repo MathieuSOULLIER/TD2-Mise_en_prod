@@ -12,7 +12,20 @@ Ce TD ce separ en 2 parties:
 
 ### 1. Prérequis :
 #### -> Télecharger [Docker desktop](https://hub.docker.com/)
+#### -> Télecharger un IDE (Exemple : [Visual studio code](https://code.visualstudio.com/))
 
-### 2. Démarrer l'appli "docker compose up"
+### 2.  code source de l'application
 
-### 2. Arreter l'appli "docker compose down"
+#### - Cloner ce depot sur votre local
+#### - Lancer votre IDE
+#### - Ouvrir le Dossier cloné
+
+Vous pouvez trouver un dossier à la racine nomé "App", ce fichier contient le code source de notre application Java.
+
+### 3. Lancer un build en local
+
+#### - Lancer Docker Desktop
+Une fois telecharger et un compte crée, vous pouvez lancer l'application Docker desktop et verifié que celle ci est bien active.
+
+#### - Ouvrez le projet depuis un terminal
+verifier que vous etes bien à la racine du dossier intitulé "TD2-MISE_EN_PROD"
