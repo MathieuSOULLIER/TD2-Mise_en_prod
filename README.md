@@ -21,7 +21,7 @@ Ce TD se sépare en 2 parties :
 - Lancer votre IDE.
 - Ouvrir le dossier cloné.
 
-Vous pouvez trouver un **dossier **à la racine nommé **App**, ce fichier contient le code source de notre application Java.
+Vous pouvez trouver un **dossier** à la racine nommé **App**, ce fichier contient le code source de notre application Java.
 
 ### 3. Lancer un build en local
 
