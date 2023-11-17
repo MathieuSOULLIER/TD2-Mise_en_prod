@@ -25,7 +25,7 @@ Vous pouvez trouver un **dossier** à la racine nommé **App**, ce fichier conti
 
 ### 3. Lancer un build en local
 
-- LUne fois téléchargé et un compte créé, vous pouvez lancer l'application Docker Desktop et vérifier que celle-ci est bien active.
+- Une fois téléchargé et un compte créé, vous pouvez lancer l'application Docker Desktop et vérifier que celle-ci est bien active.
 - Ouvrir le projet depuis un terminal. Vérifiez que vous êtes bien à la racine du dossier intitulé **TD2-MISE_EN_PROD**.
 - Lancer le build en utilisant la commande `docker build -t td2_mise_en_prod .`
 
