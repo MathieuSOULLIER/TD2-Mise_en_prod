@@ -33,6 +33,9 @@ verifier que vous etes bien à la racine du dossier intitulé "TD2-MISE_EN_PROD"
 #### - Lancé le build
 Entrer la commande ```docker build -t td2_mise_en_prod .```
 
+[!TIP]
+> Vous pouvez verifier que votre build c'est bien déroulé en allant dans las section images de Docker desktop ou vous devriez retrouver limage que l'on vien de crée
+
 ### 3. Démarrer l'application en local
 
 #### - Démarrer l'application 
