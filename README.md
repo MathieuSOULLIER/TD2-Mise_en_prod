@@ -29,3 +29,6 @@ Une fois telecharger et un compte crée, vous pouvez lancer l'application Docker
 
 #### - Ouvrez le projet depuis un terminal
 verifier que vous etes bien à la racine du dossier intitulé "TD2-MISE_EN_PROD"
+
+#### - Lancé le build
+Entrer la commande ```docker build -t td2_mise_en_prod .```
