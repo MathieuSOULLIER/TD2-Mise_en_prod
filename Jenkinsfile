@@ -18,12 +18,16 @@ pipeline {
                 }
             }
         }
+          stage('ls verification') {
+                steps {
+                  sh 'ls'
+                }
+            }
             stage('Build et Push des Docker Images') {
                 steps {
                     sh 'docker build -t td2_mise_en_prod .'
                 }
             }
-
             stage('Deploy with Docker Compose') {
                 steps {
                     sh 'docker compose up -d'
