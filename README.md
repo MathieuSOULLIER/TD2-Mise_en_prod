@@ -2,7 +2,7 @@
 
 ## Instructions
 
-### 1. Cloner le 
+### 1. Cloner  
 
 ### 2. Démarrer l'appli "docker compose up"
 
