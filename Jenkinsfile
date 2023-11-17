@@ -28,7 +28,7 @@ pipeline {
                 steps {
                     script{
                         sh 'ls'
-                        sh 'docker build -t td2_mise_en_prod .'
+                        sh 'docker build -t td2_mise_en_prod -f ./DockerFile .'
                     }
                 }
             }
