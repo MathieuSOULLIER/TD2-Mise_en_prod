@@ -12,6 +12,7 @@ Ce TD ce separ en 2 parties:
 
 ### 1. Prérequis :
 #### -> Télecharger [Docker desktop](https://hub.docker.com/)
+#### -> Télecharger [Postgre SQL](https://www.postgresql.org/download/)
 #### -> Télecharger un IDE (Exemple : [Visual studio code](https://code.visualstudio.com/))
 
 ### 2.  code source de l'application
@@ -36,8 +37,24 @@ Entrer la commande ```docker build -t td2_mise_en_prod .```
 >[!TIP]
 > Vous pouvez verifier que votre build c'est bien déroulé en allant dans las section images de Docker desktop ou vous devriez retrouver limage que l'on vien de crée
 
-### 3. Démarrer l'application en local
+### 4. Démarrer l'application en local
 
 #### - Démarrer l'application 
 Entrer la commande ```docker compose up```
+
+>[!TIP]
+> Vous pouvez verifier que votre a bien démarrer en allant dans las section containers de Docker desktop ou vous devriez retrouver le container de notre appli
+
+### 5. Tester l'application
+
+#### - Test 
+[Cliquez ici](http://localhost:8080/public/test) pour tester l'application
+
+### 6. Fermer l'application
+
+#### - Fermer l'application 
+Entrer la commande ```docker compose down```
+
+>[!TIP]
+> Vous pouvez verifier que votre c'est bien arreter en allant dans la section containers de Docker desktop et en regardant l'état du container de notre appli
 
