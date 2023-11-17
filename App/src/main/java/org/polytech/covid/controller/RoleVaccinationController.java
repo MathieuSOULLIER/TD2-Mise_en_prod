@@ -37,10 +37,11 @@ public class RoleVaccinationController {
 
     
     @GetMapping("/public/roles/rechercher")
-public ResponseEntity<?> rechercherRoleParNomEtMotDePasse(
-    @RequestParam("username") String nom,
-    @RequestParam("password") String motDePasse) {
-    try {
+public String rechercherRoleParNomEtMotDePasse() {
+     return "Rôle non trouvé.";
+    }
+}
+   /*  try {
         
         RoleVaccination role = roleService.rechercherRoleParNomEtMotDePasse(nom, SecurityConfig.passwordEncoder().encode(motDePasse));
         if (role != null) {
@@ -51,7 +52,6 @@ public ResponseEntity<?> rechercherRoleParNomEtMotDePasse(
     } catch (Exception e) {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Erreur lors de la recherche du rôle.");
     }
-}
+*/
 
-}
 

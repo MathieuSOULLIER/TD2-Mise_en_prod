@@ -73,9 +73,9 @@ public class RoleVaccinationService {
             throw new RoleNotFoundException("Role introuvable avec l'ID : " + id);
         }
     }
-
+    /* 
     public RoleVaccination rechercherRoleParNomEtMotDePasse(String nom, String motDePasse) {
-        return roleRepository.findByNomAndMotDePasse(nom, motDePasse);
-    }
+       // return roleRepository.findByNomAndMotDePasse(nom, motDePasse);
+    }*/
     
 }

@@ -10,6 +10,10 @@ Content-Type: application/json
 }
 
 ###
+GET http://localhost:8080/public/roles/rechercher
+
+
+###
 PUT http://localhost:8080/public/roles/modifier/1
 Content-Type: application/json
 
@@ -24,5 +28,3 @@ Content-Type: application/json
 DELETE http://localhost:8080/private/roles/supprimer/1
 
 
-###
-GET http://localhost:8080/public/roles/rechercher?nom=SuperAdmin&motDePasse=SuperAdmin

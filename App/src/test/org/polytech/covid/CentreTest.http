@@ -1,6 +1,6 @@
 
 ###
-POST http://localhost:8081/public/centres/ajouter
+POST http://localhost:8080/public/centres/ajouter
 Content-Type: application/json
 
 {
@@ -27,7 +27,7 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:8080/private/centres/supprimer/3
+DELETE http://localhost:8080/private/centres/supprimer/1
 
 ###
-GET http://localhost:8080/public/centres/rechercher?ville=
+GET http://localhost:8080/public/centres/rechercher?ville=jarville
