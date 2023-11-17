@@ -18,7 +18,7 @@ pipeline {
                 }
             }
         }
-          stage('ls verification') {
+          stage('ls verification dockerfile') {
                 steps {
                   sh 'ls'
                 }
