@@ -18,13 +18,13 @@ pipeline {
                 }
             }
         }
-          stage('ls verification dockerfile') {
+          stage('ls Verification path') {
                 steps {
                   sh 'ls'
                 }
             }
             
-            stage('Build et Push des Docker Images') {
+            stage('Build Docker Image') {
                 steps {
                     script{
                         sh 'ls'
@@ -34,7 +34,7 @@ pipeline {
             }
             stage('Deploy with Docker Compose') {
                 steps {
-                    sh 'docker compose up -d'
+                    sh 'docker compose up'
                 }
             }
         }
