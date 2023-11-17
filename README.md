@@ -39,7 +39,6 @@ Entrer la commande ```docker build -t td2_mise_en_prod .```
 
 ### 4. Démarrer l'application en local
 
-#### - Démarrer l'application 
 Entrer la commande ```docker compose up```
 
 >[!TIP]
