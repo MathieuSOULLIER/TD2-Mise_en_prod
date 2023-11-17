@@ -47,12 +47,10 @@ Entrer la commande ```docker compose up```
 
 ### 5. Tester l'application
 
-#### - Test 
 [Cliquez ici](http://localhost:8080/public/test) pour tester l'application
 
 ### 6. Fermer l'application
 
-#### - Fermer l'application 
 Entrer la commande ```docker compose down```
 
 >[!TIP]
