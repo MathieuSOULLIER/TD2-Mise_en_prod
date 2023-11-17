@@ -23,9 +23,13 @@ pipeline {
                   sh 'ls'
                 }
             }
+            
             stage('Build et Push des Docker Images') {
                 steps {
-                    sh 'docker build -t td2_mise_en_prod .'
+                    script{
+                        sh 'ls'
+                        sh 'docker build -t td2_mise_en_prod -f ./Dockerfile'
+                    }
                 }
             }
             stage('Deploy with Docker Compose') {
